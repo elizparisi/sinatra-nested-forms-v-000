@@ -1,12 +1,18 @@
 <h1>Display your Pirate here</h1>
 <div class="pirate">
-  <h3>Name: <%= @student.name %></h3><br>
-  <h4>Grade: <%= @student.grade %></h4>
+  <p>Name: <%= @pirate.name %></p><br>
+  <p>Weight: <%= @pirate.weight %></p>
+  <p>Height: <%= @pirate.height %></p>
 </div><br>
 
 
 <h2>Display your first ship here</h2>
-
+<% @ships.each do |ship| %>
+  <div class="ship">
+    <p>Name: <%= ship.name %></p><br>
+    <p>Type: <%= course.type %></p><br>
+  </div><br>
+<% end %>
 
 <h2>Display your second ship here</h2>
 
